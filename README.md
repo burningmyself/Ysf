@@ -8,7 +8,6 @@ Ysf v3.0新增rest api服务,提供对接服务端接口的支持,并利用jwt t
 ### Ysf v4.2更新内容
 
 > * 修复菜单折叠无法折叠子菜单的子菜单的bug！
-> * 感谢Ysf and Roses技术交流2群网友摇了摇头（671563641）提供的oracle版本的Ysf，现在已上传到oracle分支
 
 ### Ysf v4.0更新内容
 
