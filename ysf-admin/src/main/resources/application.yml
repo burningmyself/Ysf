@@ -46,15 +46,15 @@ spring:
     filters: wall,mergeStat
 
 #多数据源情况的配置
-ysf:
-  muti-datasource:
-    open: false
-    url: jdbc:mysql://127.0.0.1:3306/ysf_test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
-    username: root
-    password: root
-    dataSourceNames:
-      - dataSourceYsf
-      - dataSourceBiz
+#ysf:
+#  muti-datasource:
+#    open: false
+#    url: jdbc:mysql://127.0.0.1:3306/ysf?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: root
+#    dataSourceNames:
+#      - dataSourceYsf
+#      - dataSourceBiz
 
 ---
 
@@ -75,6 +75,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/ysf?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
+    db-name: ysf #用来搜集数据库的所有表
     filters: wall,mergeStat
 
 ---
@@ -82,8 +83,9 @@ spring:
 spring:
   profiles: produce
   datasource:
-      url: jdbc:mysql://127.0.0.1:3306/ysf?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
-      username: root
-      password: root
-      filters: wall,mergeStat
+    url: jdbc:mysql://127.0.0.1:3306/ysf?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    db-name: ysf #用来搜集数据库的所有表
+    filters: wall,mergeStat
 
