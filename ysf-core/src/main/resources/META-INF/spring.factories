@@ -1,0 +1,7 @@
+# AutoConfiguration
+spring.main.allow-bean-definition-overriding=true\
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xiujing.ysf.core.base.controller.GlobalController,\
+com.xiujing.ysf.core.config.DefaultFastjsonConfig,\
+com.xiujing.ysf.core.config.DefaultProperties,\
+com.xiujing.ysf.core.config.DefaultWebConfig
